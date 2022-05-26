@@ -62,3 +62,7 @@ springboot自动配置会装载依赖包，需要修改的地方是src/main/reso
 ![image](https://user-images.githubusercontent.com/78289616/170486976-bc985b4a-95f9-4801-bf66-55b4d74fca45.png)
 
 说明是启动顺序出问题，一定要按照上述提及的顺序来进行启动！！最好是等ProviderApplication启动完后几秒后再启动ConsumerApplication。
+
+# 前一版本
+
+此为Springboot项目迭代后的版本，前一版本在https://github.com/CherrySeason/book-borrowing-system.git
