@@ -29,8 +29,6 @@ public class AdminController {
 	ClassService classService;
 	@Autowired
 	ViewService viewService;
-	@Autowired
-	private RedisTemplate<String, Object> redisTemplate;
 
 	@RequestMapping(value = "/findbyUserid", method = RequestMethod.GET)
 	public User findByUserid(@RequestParam("userid")String user){
@@ -171,7 +169,7 @@ public class AdminController {
 	 }
 	 
 	 @RequestMapping(value = "/searchborrow",method = RequestMethod.GET)
-	 public List<Record> searchBorrow(Model map, @RequestParam(value = "content") String content) {
+	 public List<Record> searchBorrow(@RequestParam(value = "content") String content) {
 	     return recordService.findByBorrowidUsersidLikeOrBorrowidBooksidLike(content, content);
 	 }
 
