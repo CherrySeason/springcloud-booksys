@@ -43,6 +43,12 @@
 # 配置
 git clone https://github.com/CherrySeason/springboot-booksys.git
 
+需要修改pom.xml中
+<artifactId>mysql-connector-java</artifactId>
+<version>8.0.27</version>
+
+mysql的依赖包为自己mysql的版本
+
 springboot自动配置会装载依赖包，需要修改的地方是src/main/resources/application.properties中的数据库配置，需要改为适应本机的配置。
 
 需要在服务提供者端的数据库中创建数据库Book，然后导入sql文件运行，生成数据。
@@ -56,6 +62,8 @@ springboot自动配置会装载依赖包，需要修改的地方是src/main/reso
 # 启动
 
 需要按照以下顺序一次打开三个项目：EurakaSeverApplication、ProviderApplication、ConsumerApplication
+
+在使用前需要打开redis，确认redis的端口是否是6379，并且如果有密码需要修改application.properties中redis的相关配置。
 
 然后可以通过localhost:8200/login进行前端访问页面，如果登录时报系统错误，查看ConsumerApplication的报错后是如下情况：
 
