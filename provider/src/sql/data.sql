@@ -18,8 +18,8 @@
 --
 -- Table structure for table `book_table`
 --
-
-DROP TABLE IF EXISTS `book_table`;
+USE Book;
+-- DROP TABLE IF EXISTS `book_table`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `book_table` (
@@ -47,7 +47,7 @@ UNLOCK TABLES;
 -- Table structure for table `borrow_table`
 --
 
-DROP TABLE IF EXISTS `borrow_table`;
+-- DROP TABLE IF EXISTS `borrow_table`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `borrow_table` (
@@ -78,7 +78,7 @@ UNLOCK TABLES;
 -- Table structure for table `classific`
 --
 
-DROP TABLE IF EXISTS `classific`;
+-- DROP TABLE IF EXISTS `classific`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `classific` (
@@ -103,7 +103,7 @@ UNLOCK TABLES;
 -- Temporary view structure for view `recordsview`
 --
 
-DROP TABLE IF EXISTS `recordsview`;
+-- DROP TABLE IF EXISTS `recordsview`;
 /*!50001 DROP VIEW IF EXISTS `recordsview`*/;
 SET @saved_cs_client     = @@character_set_client;
 /*!50503 SET character_set_client = utf8mb4 */;
@@ -120,7 +120,7 @@ SET character_set_client = @saved_cs_client;
 -- Table structure for table `user_table`
 --
 
-DROP TABLE IF EXISTS `user_table`;
+-- DROP TABLE IF EXISTS `user_table`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `user_table` (
