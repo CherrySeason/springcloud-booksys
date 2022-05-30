@@ -51,7 +51,9 @@ mysql的依赖包为自己mysql的版本
 
 springboot自动配置会装载依赖包，需要修改的地方是src/main/resources/application.properties中的数据库配置，需要改为适应本机的配置。
 
-需要在服务提供者端的数据库中创建数据库Book，然后导入sql文件运行，生成数据。
+需要在服务提供者端的数据库中创建数据库Book，然后导入sql/data.sql文件运行，生成数据。
+
+git clone下来不是maven项目，需要分别对consumer、euraka-sever、provider项目的pom.xml 文件上右键 Add as Maven Project，就可以改成mavern项目。
 
 数据库：Mysql 8.0.27
 
