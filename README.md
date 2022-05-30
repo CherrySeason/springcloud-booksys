@@ -41,7 +41,7 @@
 密码：1234567或123456
 
 # 配置
-git clone https://github.com/CherrySeason/springboot-booksys.git
+git clone https://github.com/CherrySeason/springcloud-booksys.git
 
 需要修改pom.xml中
 <artifactId>mysql-connector-java</artifactId>
